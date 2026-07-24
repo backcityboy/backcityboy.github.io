@@ -1,0 +1,34 @@
+* {
+    margin: 0vh;
+    padding: 0vh;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #947BD3;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    padding: 2vh;
+
+    
+}
+
+#formulario {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vh;
+    max-width: fit-content;
+    background-color: #663399;
+    border-radius: 2vh;
+    padding: 2vh;
+}
+
+.botao {
+    border-radius: 4px;
+    
+}
+
+.labels {
+    color: aliceblue;
+}
