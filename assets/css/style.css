@@ -4,24 +4,48 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #776a91;
+}
+
 header {
     background-color: #947BD3;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: aliceblue;
-    padding: 2vh;
+    padding: 2vh; 
+    display: flex;
+    gap: 15px;
+    -webkit-text-stroke: 1px #000000;
+}
 
-    
+header img {
+    border-radius: 50%;
+    object-fit: cover;
+    width:50px;    
+    height: auto;
 }
 
 #formulario {
-    
+    margin: 0 auto;
+    margin-top: 6vh;
     display: flex;
     flex-direction: column;
-    gap: 0.5vh;
-    max-width: fit-content;
+    justify-content: center;
+    gap: 4px;
+    max-width: 350px;
     background-color: #663399;
     border-radius: 2vh;
-    padding: 2vh;
+    padding: 3vh;
+    padding-bottom: 8vh;
+    overflow: hidden;
+}
+
+#formulario #log-in {
+    display: block;
+    margin-top: 250px;
+    background-color: #f3f1f5;
+    height: 30px;
+    font-size: 20px;
 }
 
 .botao {
@@ -30,4 +54,13 @@ header {
 
 .labels {
     color: aliceblue;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.botao, .labels {
+
+    justify-content: center         ;
 }

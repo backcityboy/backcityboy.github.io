@@ -3,29 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SmartControl - Início</title>
-    <!--<link rel="stylesheet" href="assets/css/style.css">/!-->
+    <title>SmartControl - Fazer Login</title>
+    <!--<link rel="stylesheet" href="assets/css/style.css">!-->
 </head>
 
 <header>
-    <h1>Cadastro de Usuário</h1>
-    <h2>Preencha os dados de acesso do sistema</h2>
+     <!--<img class="foto_perfil" src="assets/images/foto_perfil_goku_black.webp" alt="Foto de Perfil">!-->
+    <h1>SmartControl</h1>
 </header>
 
 <body>
-    <form action="dashboard.html" method="get" id="formulario">
-        <label for="nome_completo" class="labels">Nome Completo:</label>
-        <input type="text" name="nome_completo" id="nome_completo" placeholder="Digite seu nome..." required class="botao">
-        <label for="email" class="labels">E-mail Corporativo</label>
+    <form action="inicio.html" method="get" id="formulario">        
+        <label for="email" class="labels">E-mail</label>
         <input type="email" name="email_corporativo" id="email" required class="botao" placeholder="Digite seu e-mail...">
-        <label for="senha" class="labels">Senha de Acesso</label>
+        <label for="senha" class="labels">Senha</label>
         <input type="password" name="senha" id="senha" required minlength="8" class="botao" placeholder="Digite sua senha...">
-        <button type="submit" class="botao">Salvar Usuário</button>
-        <button type="reset" class="botao">Cancelar Operação</button>
+        <button type="submit" class="botao" id="log-in">Fazer Login</button>       
     </form>
+    <a href="">Esqueceu a Senha?</a>
+    
+    <footer>
+        <div class="criar_conta">
+            <p>Não possui uma conta?</p><a href="">Clique Aqui</a>
+        </div>  
+    </footer>
+
 </body>
 </html>
 
-<footer>
-    <a target="_blank" href="https://pedrotech.com.br/pedrolandia/">Pedrolandia</a>
-</footer>
