@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartControl - Cadastro</title>
+</head>
+
+<header>
+    <img src="assets/images/logo-smart.webp" alt="logo_smart_control" width="64" height="auto">
+    <h1>SmartControl</h1>
+</header>
+
+<body>
+    <form action="dashboard.html" method="get">
+        <label for="nome">Nome Completo</label>
+        <input type="text" name="nome_completo" id="nome" placeholder="Digite seu nome..." required>
+        <label for="email">E-mail</label>
+        <input type="email" name="e-mail" id="email" placeholder="Digite seu e-mail..." required>
+        <label for="senha">Senha</label>
+        <input type="password" name="senha" id="senha" placeholder="Digite sua senha..." minlength="8" required>
+        <select name="nivel_acesso" id="acesso" required>
+            <option value="nivel_1" selected>Nível 1</option>
+            <option value="nivel_2">Nível 2</option>
+            <option value="nivel_3">Nível 3</option>
+            <option value="nivel_4">Nível 4</option>
+            <option value="nivel_5">Nível 5</option>
+        </select>
+        <label for="termos">Aceito os Termos de Uso</label>
+        <input type="checkbox" name="termos_uso" id="termos" required>
+        <a href="index.html">Voltar ao Login</a>
+        <button type="submit">Cadastrar</button>
+    </form>
+</body>
+</html>

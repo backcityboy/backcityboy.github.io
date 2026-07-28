@@ -3,29 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SmartControl - Fazer Login</title>
-    <!--<link rel="stylesheet" href="assets/css/style.css">!-->
+    <title>SmartControl - Fazer Login</title>   
 </head>
 
 <header>
-     <!--<img class="foto_perfil" src="assets/images/foto_perfil_goku_black.webp" alt="Foto de Perfil">!-->
+    <img src="assets/images/logo-smart.webp" alt="logo_smart_control" width="64" height="auto">
     <h1>SmartControl</h1>
 </header>
 
 <body>
-    <form action="inicio.html" method="get" id="formulario">        
-        <label for="email" class="labels">E-mail</label>
-        <input type="email" name="email_corporativo" id="email" required class="botao" placeholder="Digite seu e-mail...">
-        <label for="senha" class="labels">Senha</label>
-        <input type="password" name="senha" id="senha" required minlength="8" class="botao" placeholder="Digite sua senha...">
-        <a href="">Esqueceu a Senha?</a>
-        <button type="submit" class="botao" id="log-in">Fazer Login</button>       
-        <p>Não possui uma conta?</p><a href="">Clique Aqui</a>
-    </form>
-    
-    
-    
-
+    <form action="dashboard.html" method="get" id="formulario">        
+        <label for="email">E-mail</label>
+        <input type="email" name="email_corporativo" id="email" required placeholder="Digite seu e-mail...">
+        <label for="senha">Senha</label>
+        <input type="password" name="senha" id="senha" required minlength="8" placeholder="Digite sua senha...">
+        <button type="submit" id="log-in">Fazer Login</button>      
+        <a href="cadastro.html">Cadastrar-se</a>
+    </form> 
 </body>
 </html>
 
