@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../images/background1.webp');
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.inter-inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 12px;
+    font-style: normal;
+}
+
+.container {
+    align-self: start;
+    max-width: 90dvh;
+    background-color: #404040;
+    color: #ffffff;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+.cabeca {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20dvh;
+    width: 60dvh;
+    font-size: 50px;
+    /* margin-top: 200px;  */
+}
+
+
+
+.log-in {
+    position: relative;
+    left: 10dvh;
+    
+}
+
+#formulario {
+    padding-bottom: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px ;
+}
+
+.inputs {
+    border-radius: 1dvh;
+    border-width: 0px;
+    width: 70dvh;
+    height: 4.5dvh;
+    padding-left: 10px;
+}
+
+.botao {
+    position: relative;
+    left: 5dvh;
+    top: 20dvh;
+    max-width: 60dvh;
+    height: 6.5dvh;
+    border-radius: 15px;
+    border-width: 0px;
+    font-size: 42px;
+    font-family: "Inter", sans-serif;
+    background-color: #93969B;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cadastro {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    
+}
+
+#crie_aqui {
+    color: #67AEFF;
+}
+
+
+#esqueceu {
+    color: #67AEFF;
+    max-width: 700px;
+    justify-content: end;
+}
+
+#labels {
+    max-width: fit-content;
+}
+

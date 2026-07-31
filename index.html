@@ -3,23 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SmartControl - Fazer Login</title>   
+    <title>SmartControl - Fazer Login</title>  
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 
-<header>
-    <img src="assets/images/logo-smart.webp" alt="logo_smart_control" width="64" height="auto">
-    <h1>SmartControl</h1>
-</header>
-
 <body>
-    <form action="dashboard.html" method="get" id="formulario">        
-        <label for="email">E-mail</label>
-        <input type="email" name="email_corporativo" id="email" required placeholder="Digite seu e-mail...">
-        <label for="senha">Senha</label>
-        <input type="password" name="senha" id="senha" required minlength="8" placeholder="Digite sua senha...">
-        <button type="submit" id="log-in">Fazer Login</button>      
-        <a href="cadastro.html">Cadastrar-se</a>
-    </form> 
+    <main class="container">
+        <div class="log-in">
+            <div class="cabeca_">
+                <div class="cabeca">
+                    <img src="assets/images/logosmartcontrol.png" alt="logo_smart_control" width="100" height="auto">
+                    <h1>SmartControl</h1>
+                </div>
+            </div>
+            <form action="dashboard.html" method="get" id="formulario">        
+                <label for="email" id="labels">E-mail</label>
+                <input type="email" name="email_corporativo" id="email" required placeholder="Digite seu e-mail..." class="inputs">
+                <label for="senha" id="labels">Senha</label>
+                <input type="password" name="senha" id="senha" required minlength="8" placeholder="Digite sua senha..." class="inputs">
+                <a href="" id="esqueceu">Esqueceu a senha?</a>
+                <button type="submit" id="log-in" class="botao">Fazer Login</button>      
+                <div class="cadastro">
+                    <p>Não possui uma conta?</p>
+                    <a href="cadastro.html" id="crie_aqui">Crie uma aqui.</a>
+                </div>
+            </form>
+        </div>
+    </main>
 </body>
 </html>
 
