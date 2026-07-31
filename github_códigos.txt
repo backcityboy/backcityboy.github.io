@@ -8,9 +8,7 @@
 6. git remote add origin https://github.com/backcityboy/backcityboy.github.io.git
 7. git add .
 8. git commit -m "comentário qualquer"
-9. git push origin main (só pá dá merda XD)
+9. git push origin main 
 10.git pull origin main --allow-unrelated-histories
-11.git push origin main (agora sim é pá dá baum)
-
 
 (medida de segurança: git branch -m main)

@@ -4,11 +4,13 @@
     box-sizing: border-box;
 }
 
+
 body {
     background-image: url('../images/background1.webp');
     background-position: center;
     background-size: cover;
     overflow: hidden;
+    
 }
 
 .inter-inter {
@@ -20,11 +22,11 @@ body {
 
 .container {
     align-self: start;
-    max-width: 90dvh;
+    max-width: 85dvh;
     background-color: #404040;
     color: #ffffff;
     font-family: "Inter", sans-serif;
-    font-size: 20px;
+    font-size: 3dvh;
     font-weight: bold;
     
 }
@@ -32,19 +34,19 @@ body {
 .cabeca {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 20dvh;
+    
+    /*  margin-bottom: 20dvh; */
     width: 60dvh;
-    font-size: 50px;
-    /* margin-top: 200px;  */
+    font-size: 5dvh;
+    max-width: fit-content;
 }
-
-
 
 .log-in {
     position: relative;
     left: 10dvh;
-    
+    padding-top: 10dvh;
 }
 
 #formulario {
@@ -52,6 +54,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px ;
+    margin-top: 20dvh;
 }
 
 .inputs {
@@ -63,14 +66,15 @@ body {
 }
 
 .botao {
-    position: relative;
-    left: 5dvh;
-    top: 20dvh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10dvh;
+    margin-left: 5dvh;
     max-width: 60dvh;
     height: 6.5dvh;
-    border-radius: 15px;
-    border-width: 0px;
-    font-size: 42px;
+    border-radius: 2dvh ;
+    border-width: 0dvh;
+    font-size: 5dvh;
     font-family: "Inter", sans-serif;
     background-color: #93969B;
     font-weight: bold;
@@ -80,8 +84,8 @@ body {
 .cadastro {
     display: flex;
     flex-direction: row;
-    gap: 6px;
-    
+    gap: 1dvh;
+    margin-left: 6dvh;
 }
 
 #crie_aqui {
@@ -91,11 +95,13 @@ body {
 
 #esqueceu {
     color: #67AEFF;
-    max-width: 700px;
+    max-width: 70dvh;
+    display: flex;
+    flex-direction: row;
     justify-content: end;
+    
 }
 
 #labels {
     max-width: fit-content;
 }
-
