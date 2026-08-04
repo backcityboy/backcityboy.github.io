@@ -1,0 +1,45 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    
+}
+
+header {
+    background-color: #000000;
+    padding-bottom: 2dvh;
+    display: flex;
+}
+
+.texto_logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1dvh;
+    font-family: "Inter", sans-serif;
+}
+
+header .inicio {
+    color: #FFFFFF;
+    justify-content: center;
+    font-family: "Inter", sans-serif;
+}
+
+
+
+#smart {
+    color: #FFFFFF;
+    
+}
+
+#control {
+    color: #FFE120;
+}
+
+.caixa1 {
+    width: 40dvh;
+    height: 20dvh;
+    background-color: #FFE120;
+   
+}
+
