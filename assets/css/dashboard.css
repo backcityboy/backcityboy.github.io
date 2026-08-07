@@ -233,7 +233,7 @@ header {
     margin-left: 1.7dvh;
 }
 
-.caixa2 {
+.card1 {
     width: 100dvh;
     height: 60dvh;
     background-color: #ffffff;
@@ -250,7 +250,29 @@ header {
     gap: 2dvh;
 }
 
+.caixa2 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 5dvh;
+}
 
+.caixa3 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+    gap: 5dvh;
+}
+
+.caixa4 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+    gap: 5dvh;
+}
 
 .cards_linha1 {
     width: 30dvh;
@@ -262,6 +284,7 @@ header {
     font-size: 0.7rem;
     filter: drop-shadow(#d6d6d6 1dvh 1dvh 1dvh);
     margin-left: 1dvh;
+    margin-top: 5dvh;
 }
 
 .cards_linha2 {
@@ -274,6 +297,7 @@ header {
     font-size: 0.7rem;
     filter: drop-shadow(#d6d6d6 1dvh 1dvh 1dvh);
     margin-left: 1dvh;
+    margin-top: 5dvh;
 }
 
 .cards_linha3 {
@@ -286,4 +310,44 @@ header {
     font-size: 0.7rem;
     filter: drop-shadow(#d6d6d6 1dvh 1dvh 1dvh);
     margin-left: 1dvh;
+    margin-top: 5dvh;
+}
+
+.cards_linha4 {
+    width: 30dvh;
+    height: 20dvh;
+    background-color: #ffffff;
+    border: 0.2dvh ridge;
+    border-radius: 2dvh;
+    font-family: "Inter", sans-serif;
+    font-size: 0.7rem;
+    filter: drop-shadow(#d6d6d6 1dvh 1dvh 1dvh);
+    margin-left: 1dvh;
+    margin-top: 5dvh;
+}
+
+.cards_linha5 {
+    width: 30dvh;
+    height: 20dvh;
+    background-color: #ffffff;
+    border: 0.2dvh ridge;
+    border-radius: 2dvh;
+    font-family: "Inter", sans-serif;
+    font-size: 0.7rem;
+    filter: drop-shadow(#d6d6d6 1dvh 1dvh 1dvh);
+    margin-left: 1dvh;
+    margin-top: 5dvh;
+}
+
+.cards_linha6 {
+    width: 30dvh;
+    height: 20dvh;
+    background-color: #ffffff;
+    border: 0.2dvh ridge;
+    border-radius: 2dvh;
+    font-family: "Inter", sans-serif;
+    font-size: 0.7rem;
+    filter: drop-shadow(#d6d6d6 1dvh 1dvh 1dvh);
+    margin-left: 1dvh;
+    margin-top: 5dvh;
 }
