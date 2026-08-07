@@ -56,6 +56,11 @@ header {
     margin: 1dvh;
     margin-top: 4dvh;
     justify-content: space-around;
+    background-color: #FFFFFF;
+    padding: 2dvh;
+    border: 0.2vh ridge;
+    border-radius: 2dvh;
+    filter: drop-shadow(#d6d6d6 1dvh 1dvh 1dvh);
 }
 
 .caixa1 {
@@ -65,6 +70,7 @@ header {
     border: 0.2dvh ridge ;
     font-family: "Inter", sans-serif;
     font-size: 0.7rem;
+    filter: drop-shadow(#d6d6d6 1dvh 1dvh 1dvh);
 }
 
 #item1 {
@@ -225,4 +231,59 @@ header {
 #texto_baixo_item4 {
     margin-bottom: 1dvh;
     margin-left: 1.7dvh;
+}
+
+.caixa2 {
+    width: 100dvh;
+    height: 60dvh;
+    background-color: #ffffff;
+    border: 0.2dvh ridge;
+    border-radius: 2dvh;
+    font-family: "Inter", sans-serif;
+    font-size: 0.7rem;
+    filter: drop-shadow(#d6d6d6 1dvh 1dvh 1dvh);
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+    margin-left: 1dvh;
+    gap: 2dvh;
+}
+
+
+
+.cards_linha1 {
+    width: 30dvh;
+    height: 20dvh;
+    background-color: #ffffff;
+    border: 0.2dvh ridge;
+    border-radius: 2dvh;
+    font-family: "Inter", sans-serif;
+    font-size: 0.7rem;
+    filter: drop-shadow(#d6d6d6 1dvh 1dvh 1dvh);
+    margin-left: 1dvh;
+}
+
+.cards_linha2 {
+    width: 30dvh;
+    height: 20dvh;
+    background-color: #ffffff;
+    border: 0.2dvh ridge;
+    border-radius: 2dvh;
+    font-family: "Inter", sans-serif;
+    font-size: 0.7rem;
+    filter: drop-shadow(#d6d6d6 1dvh 1dvh 1dvh);
+    margin-left: 1dvh;
+}
+
+.cards_linha3 {
+    width: 30dvh;
+    height: 20dvh;
+    background-color: #ffffff;
+    border: 0.2dvh ridge;
+    border-radius: 2dvh;
+    font-family: "Inter", sans-serif;
+    font-size: 0.7rem;
+    filter: drop-shadow(#d6d6d6 1dvh 1dvh 1dvh);
+    margin-left: 1dvh;
 }
