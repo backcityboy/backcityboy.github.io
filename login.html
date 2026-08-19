@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="assets/css/login.css">
+  <link rel="icon" type="image/png" href="assets/images/images (1).jpg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .bg-custom-image {
+      background: url('assets/images/images (1).jpg') center/cover no-repeat;
+    }
+  </style>
+</head>
+<body class="bg-light d-flex align-items-center min-vh-100 py-4">
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        <div class="card border-0 shadow-lg overflow-hidden">
+          <div class="row g-0">
+            
+            <div class="col-md-6 p-4 p-md-5 bg-white">
+              <div class="text-center mb-4">
+                <i class="fa-solid fa-lock text-alert fs-1 mb-2" id="cadeado"></i>
+                <h1 class="h3 fw-bold">Login</h1>
+              </div>
+
+              <form action="index.html" method="get">
+                <div class="mb-3">
+                  <label class="form-label text-muted">
+                    <i class="fa-regular fa-envelope me-1"></i> E-mail
+                  </label>
+                  <input type="email" class="form-control" required>
+                </div>
+
+                <div class="mb-2">
+                  <label class="form-label text-muted">
+                    <i class="fa-regular fa-eye me-1"></i> Senha
+                  </label>
+                  <input type="password" class="form-control" required>
+                </div>
+
+                <div class="text-end mb-4">
+                  <a href="senha.html" class="text-decoration-none small" id="esqueceu">Esqueceu a Senha?</a>
+                </div>
+
+                <button type="submit" class="btn w-100 fw-bold py-2 mb-3" id="botao">Fazer Login</button>
+
+                <div class="text-center small text-muted">
+                  Não possui uma conta? <a href="cadastro.html" class="text-decoration-none fw-bold" id="crie">Crie uma aqui.</a>
+                </div>
+              </form>
+            </div>
+
+            <div class="col-md-6 d-none d-md-block bg-custom-image"></div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
