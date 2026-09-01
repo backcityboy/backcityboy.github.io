@@ -1,7 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden;
+}
+
+.carousel-item img {
+
+  height: 500px; /* Defina a altura desejada */
+  object-fit: cover; /* Recorta a imagem para preencher sem esticar */
+   width: 100%;
+ 
+ 
 }
 
 header {
@@ -12,7 +24,20 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: aquamarine;
-    
+    background-color: #FF5000;
+    font-family: 'Lobster', cursive;
+    font-size: 1.5rem;
+    color: #FFFFFF;
 }
 
+#logo {
+    margin-left: 1dvw;
+}
+
+footer {
+    max-width: 100%;
+    width: 100%;
+    max-height: 100%;
+    background-color: #FF5000;
+    
+}
