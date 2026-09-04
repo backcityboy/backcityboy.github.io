@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Cardápio | Q-Pastel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top qp-nav">
+        <div class="container"><a class="navbar-brand fw-black qp-brand"
+                href="index.html"><span>Q</span>-Pastel</a><button class="navbar-toggler" data-bs-toggle="collapse"
+                data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav ms-auto align-items-center gap-2">
+                    <li><a class="nav-link active" href="menu.html">Cardápio</a></li>
+                    <li><button id="themeToggle" class="btn btn-sm btn-outline-orange rounded-pill">🌙</button></li>
+                    <li id="userArea"></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="container py-5">
+        <div class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-4">
+            <div><span class="eyebrow">CARDÁPIO</span>
+                <h1 class="fw-black mt-2">Bateu a fome? </h1>
+                <p class="text-secondary">Escolha, personalize e partiu!</p>
+            </div>
+            <div class="btn-group rounded-pill overflow-hidden"><button class="btn btn-orange filter-btn"
+                    data-filter="all">Tudo</button><button class="btn btn-outline-orange filter-btn"
+                    data-filter="pastel">Pastéis</button><button class="btn btn-outline-orange filter-btn"
+                    data-filter="salgado">Salgados</button><button class="btn btn-outline-orange filter-btn"
+                    data-filter="bebida">Bebidas</button></div>
+        </div>
+        <div class="row g-4" id="products"></div>
+    </main>
+    <div class="modal fade" id="productModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content qp-modal">
+                <div class="modal-header">
+                    <h5 id="modalTitle" class="fw-bold"></h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="modalDesc" class="text-secondary"></p>
+                    <div class="d-flex justify-content-between fw-bold"><span>Quantidade</span>
+                        <div class="input-group" style="width:130px"><button id="minus"
+                                class="btn btn-outline-secondary">−</button><input id="qty"
+                                class="form-control text-center" value="1" readonly><button id="plus"
+                                class="btn btn-outline-secondary">+</button></div>
+                    </div>
+                </div>
+                <div class="modal-footer"><strong id="modalPrice"></strong><button id="addCart"
+                        class="btn btn-orange rounded-pill">Adicionar ao pedido</button></div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/app.js"></script>
+    <script src="assets/menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

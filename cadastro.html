@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Cadastro | Q-Pastel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/style.css" rel="stylesheet">
+</head>
+
+<body class="auth-bg">
+    <div class="container py-4"><a class="qp-brand text-decoration-none"
+            href="index.html"><span>Q</span>-Pastel</a><button id="themeToggle"
+            class="btn btn-sm btn-outline-orange rounded-pill float-end"></button></div>
+    <main class="container auth-wrap">
+        <div class="auth-card mx-auto">
+            <div class="text-center mb-4">
+                <div class="logo-bubble"></div>
+                <h1 class="fw-black mt-3">Crie sua conta</h1>
+                <p class="text-secondary">Seu próximo pastel começa aqui.</p>
+            </div>
+            <form id="registerForm" novalidate>
+                <div class="row g-3">
+                    <div class="col-md-6"><label class="form-label">Nome</label><input id="name"
+                            class="form-control form-control-lg" required minlength="2">
+                        <div class="invalid-feedback">Informe seu nome.</div>
+                    </div>
+                    <div class="col-md-6"><label class="form-label">E-mail</label><input id="email" type="email"
+                            class="form-control form-control-lg" required>
+                        <div class="invalid-feedback">Digite um e-mail válido.</div>
+                    </div>
+                    <div class="col-md-6"><label class="form-label">Senha</label><input id="password" type="password"
+                            class="form-control form-control-lg" required minlength="6">
+                        <div class="invalid-feedback">Mínimo de 6 caracteres.</div>
+                    </div>
+                    <div class="col-md-6"><label class="form-label">Confirmar senha</label><input id="confirmPassword"
+                            type="password" class="form-control form-control-lg" required>
+                        <div class="invalid-feedback">As senhas precisam ser iguais.</div>
+                    </div>
+                </div>
+                <label class="d-flex gap-2 small mt-3"><input id="terms" type="checkbox" class="form-check-input"
+                        required> Aceito os termos de uso e a política de privacidade.</label>
+                <button class="btn btn-orange btn-lg w-100 rounded-pill mt-4">Criar minha conta</button>
+                <div id="registerAlert" class="alert d-none mt-3"></div>
+            </form>
+            <p class="text-center mt-4 mb-0">Já tem conta? <a class="link-orange fw-bold" href="login.html">Entrar</a>
+            </p>
+        </div>
+    </main>
+    <script src="assets/app.js"></script>
+    <script src="assets/auth.js"></script>
+</body>
+
+</html>

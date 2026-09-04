@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Dashboard | Q-Pastel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar qp-nav sticky-top">
+        <div class="container"><a class="qp-brand text-decoration-none" href="index.html"><span>Q</span>-Pastel</a>
+            <div class="d-flex align-items-center gap-2"><button id="themeToggle"
+                    class="btn btn-sm btn-outline-orange rounded-pill">🌙</button>
+                <div id="userArea"></div>
+            </div>
+        </div>
+    </nav>
+    <main class="container py-5">
+        <div class="d-flex flex-wrap justify-content-between align-items-end mb-4">
+            <div><span class="eyebrow">PAINEL ADMINISTRATIVO</span>
+                <h1 class="fw-black mt-2">Visão geral </h1>
+                <p class="text-secondary">Acompanhe o movimento da Q-Pastel.</p>
+            </div><button class="btn btn-orange rounded-pill" data-bs-toggle="modal" data-bs-target="#newProduct">+ Novo
+                produto</button>
+        </div>
+        <div class="row g-3 mb-4">
+            <div class="col-md-3">
+                <div class="stat-card"><span>Vendas hoje</span><strong>R$ 2.480</strong><small>↑ 12,4%</small></div>
+            </div>
+            <div class="col-md-3">
+                <div class="stat-card"><span>Pedidos</span><strong>86</strong><small>↑ 8,1%</small></div>
+            </div>
+            <div class="col-md-3">
+                <div class="stat-card"><span>Ticket médio</span><strong>R$ 28,84</strong><small>↑ 3,2%</small></div>
+            </div>
+            <div class="col-md-3">
+                <div class="stat-card"><span>Clientes</span><strong>1.248</strong><small>+32 hoje</small></div>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-8">
+                <div class="dashboard-card">
+                    <div class="d-flex justify-content-between">
+                        <h5 class="fw-bold">Vendas da semana</h5><span class="badge text-bg-light">Últimos 7 dias</span>
+                    </div>
+                    <div class="chart mt-4">
+                        <div style="height:40%"><i>SEG</i></div>
+                        <div style="height:62%"><i>TER</i></div>
+                        <div style="height:55%"><i>QUA</i></div>
+                        <div style="height:78%"><i>QUI</i></div>
+                        <div style="height:68%"><i>SEX</i></div>
+                        <div style="height:94%"><i>SÁB</i></div>
+                        <div style="height:48%"><i>DOM</i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="dashboard-card">
+                    <h5 class="fw-bold">Mais vendidos</h5>
+                    <div class="rank"><b>1</b><span> Carne com queijo</span><strong>184</strong></div>
+                    <div class="rank"><b>2</b><span> Frango c/ catupiry</span><strong>161</strong></div>
+                    <div class="rank"><b>3</b><span> Guaraná</span><strong>142</strong></div>
+                    <div class="rank"><b>4</b><span> Batata</span><strong>98</strong></div>
+                </div>
+            </div>
+        </div>
+        <div class="dashboard-card mt-4">
+            <h5 class="fw-bold">Pedidos recentes</h5>
+            <div class="table-responsive">
+                <table class="table align-middle mt-3">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Cliente</th>
+                            <th>Itens</th>
+                            <th>Total</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#1048</td>
+                            <td>Mariana</td>
+                            <td>2x Pastel + refri</td>
+                            <td>R$ 32,00</td>
+                            <td><span class="badge status-ok">Pronto</span></td>
+                        </tr>
+                        <tr>
+                            <td>#1047</td>
+                            <td>João</td>
+                            <td>Combo Fome de Leão</td>
+                            <td>R$ 39,90</td>
+                            <td><span class="badge status-wait">Preparando</span></td>
+                        </tr>
+                        <tr>
+                            <td>#1046</td>
+                            <td>Lucas</td>
+                            <td>3x Pastel</td>
+                            <td>R$ 36,00</td>
+                            <td><span class="badge status-ok">Entregue</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <div class="modal fade" id="newProduct" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content qp-modal">
+                <div class="modal-header">
+                    <h5 class="fw-bold">Novo produto</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body"><input class="form-control mb-3" placeholder="Nome do produto"><input
+                        class="form-control mb-3" placeholder="Preço (R$)"><textarea class="form-control"
+                        placeholder="Descrição"></textarea></div>
+                <div class="modal-footer"><button class="btn btn-orange rounded-pill" data-bs-dismiss="modal">Salvar
+                        produto</button></div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/app.js"></script>
+    <script src="assets/auth.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', () => { const u = JSON.parse(localStorage.getItem('qp_user') || 'null'); if (!u || !u.admin) { location.href = 'login.html'; } })</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
